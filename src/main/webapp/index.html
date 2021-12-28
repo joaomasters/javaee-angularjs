@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java EE/Angular JS - Cadastro Pessoa</title>
+    <link rel="stylesheet" type="text/css" href="/libs/components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/libs/css/app.css"/>
+
+</head>
+<body ng-app="javaeeAngular">
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">JavaEE / AngularJS</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/">Pessoa</a></li>
+                <li><a href="#/sobre">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <script src="/libs/components/angular/angular.min.js"></script>
+    <script src="/libs/components/angular-route/angular-route.min.js"></script>
+    <script src="/libs/components/angular-messages/angular-messages.min.js"></script>
+
+    <script src="/util/route.js"></script>
+    <script src="/controller/pessoaController.js"></script>
+</body>
+</html>
